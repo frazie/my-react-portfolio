@@ -39,7 +39,7 @@ function Header({}: Props) {
             bgColor='transparent'
              />
             <SocialIcon 
-            url='google.com/_frazie_' 
+            url='dev.to/_frazie_' 
             fgColor='grey' 
             bgColor='transparent'
              />
