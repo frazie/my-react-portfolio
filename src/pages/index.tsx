@@ -3,9 +3,12 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 
+import Experience from '@/components/Experience'
+
+
 export default function Home() {
   return (
-    <div className='bg-[rgb(54,54,54)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[rgb(54,54,54)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth'>
       <Head>
         <title>Frazier&apos;s Portfolio</title>
       </Head>
@@ -22,8 +25,14 @@ export default function Home() {
         <About />
       </section>
       {/*experience */}
+      <section id='experience' className='snap-center'>
+        <Experience />
+      </section>
 
       {/*skills */}
+      <section id='skills' className='snap-center'>
+        <Skills />
+      </section>
 
       {/*projects*/}
 
