@@ -3,10 +3,12 @@ import { motion } from 'framer-motion'
 
 type Props = {}
 
+
 function AboutImage({}: Props) {
   return (
     <motion.img 
     className='-mb-20 mt-5 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full  object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]' 
+
     initial={{
         x: -300,
         opacity: 0,
@@ -26,3 +28,4 @@ function AboutImage({}: Props) {
 }
 
 export default AboutImage
+

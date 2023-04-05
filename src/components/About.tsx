@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+
 import AboutImage from './AboutImage'
 import AboutText from './AboutText'
+
 
 type Props = {}
 
@@ -20,6 +22,7 @@ function About({}: Props) {
       <AboutText />
       
     </motion.div>
+
   )
 }
 

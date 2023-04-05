@@ -3,7 +3,9 @@ import { motion } from 'framer-motion'
 
 type Props = {}
 
+
 function AboutText({}: Props) {
+
   return (
     <motion.div className='space-y-10 px-0 md:px-10'
     initial={{
@@ -29,3 +31,4 @@ function AboutText({}: Props) {
 }
 
 export default AboutText
+
