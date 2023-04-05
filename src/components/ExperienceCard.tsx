@@ -14,26 +14,26 @@ function ExperienceCard({}: Props) {
       transition={{duration: 1.2,}}
       whileInView={{opacity: 1, y: 0,}}
       viewport={{once: true}}
-      className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
+      className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
       src="https://frazier-se.netlify.app/assets/img/IMG_20180120_131810_874%20(1).jpg" 
      alt="" />
 
-      <div className='px-0 md:px-10 '>
+      <div className='px-0 md:px-5 '>
         <h4 className='text-4xl font-light '>fullstack software developer</h4>
-        <p className='font]-bold text-2xl mt-1'>company (seo global)</p>
+        <p className='font-bold text-2xl mt-1'>company (seo global)</p>
         <div className='flex space-x-2 my-2'>
           <img className='h-10 w-10 rounded-full' src="#" alt="tech-skill" />
           <img className='h-10 w-10 rounded-full' src="#" alt="tech-skill" />
           <img className='h-10 w-10 rounded-full' src="#" alt="tech-skill" />
           <img className='h-10 w-10 rounded-full' src="#" alt="tech-skill" />
         </div>
-        <p className='uppercase py-5 text-gray-400'>dates start - finish</p>
-        <ul className='list-disc space-y-3 ml-5 text-lg'>
-          <li>summary points for the role.summary points for the role.summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.summary points for the role.summary points for the role.</li>
+        <p className='uppercase py-4 text-gray-400'>dates start - finish</p>
+        <ul className='list-disc space-y-2 ml-5 text-lg'>
+          <li>summary points for the role.summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.summary points for the role.</li>
         </ul>
       </div>
 
