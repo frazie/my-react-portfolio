@@ -28,7 +28,9 @@ function Skills({}: Props) {
             <Skill directionLeft={true}/>
             <Skill directionLeft={true}/>
             <Skill directionLeft={true}/>
-
+            <Skill directionLeft={true}/>
+            <Skill directionLeft={true}/>
+            <Skill directionLeft={true}/>
         </div>
     </motion.div>
   )
