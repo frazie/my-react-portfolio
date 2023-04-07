@@ -16,9 +16,9 @@ function Skill({ directionLeft }: Props) {
             transition={{duration: 1.5}}
             whileInView={{opacity: 1, x: 0}}
             src="https://www.sanity.io/static/images/logo_rounded_square.png" alt="" 
-            className='rounded-full border-gray-500 object-cover w-24 h-24 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
+            className='rounded-full border-gray-500 object-cover w-20 h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
         />
-        <div className='absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:h-28 md:w-28 xl:w-32 xl:h-32 z-0'>
+        <div className='absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-20 h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 z-0'>
             <div className='flex items-center justify-center h-full'>
                 <p className='text-3xl font-bold text-black opacity-100'>lang</p>
             </div>
