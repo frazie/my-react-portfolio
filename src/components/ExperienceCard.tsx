@@ -29,11 +29,11 @@ function ExperienceCard({}: Props) {
         </div>
         <p className='uppercase py-4 text-gray-400'>dates start - finish</p>
         <ul className='list-disc space-y-2 ml-5 text-lg'>
-          <li>summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.</li>
-          <li>summary points for the role.summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.</li>
+          <li>summary points for the role.summary points for the role.</li>
         </ul>
       </div>
 
