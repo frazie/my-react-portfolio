@@ -10,7 +10,7 @@ function Projects({}: Props) {
     <div className='h-screen flex flex-col relative overflow-hidden text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
         <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>projects</h3>
 
-        <div className='relativ w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+        <div className='relativ w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#f7ab0a]/80'>
             {projects.map((project, i) => (
                 <motion.div 
                 initial={{opacity: 0}}
