@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
         ],
         loop: true,
         delaySpeed: 2000,
-        typeSpeed: 100,
+        typeSpeed: 150,
     })
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
             <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[12px]'>full-stack software engineer</h2>
             <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
                 <span className='mr-3'>{text}</span>
-                <Cursor cursorColor='red' />
+                <Cursor cursorColor='orange' />
             </h1>
             <div className='pt-5'>
                 <Link href='#about'>

@@ -14,7 +14,7 @@ function ExperienceCard({}: Props) {
       transition={{duration: 1.2,}}
       whileInView={{opacity: 1, y: 0,}}
       viewport={{once: true}}
-      className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
+      className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
       src="https://frazier-se.netlify.app/assets/img/IMG_20180120_131810_874%20(1).jpg" 
      alt="" />
 
