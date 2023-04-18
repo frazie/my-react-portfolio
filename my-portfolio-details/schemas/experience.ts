@@ -45,8 +45,8 @@ export default defineType({
       of: [{ type: 'reference', to: { type: 'skill'}}]
     }),
     defineField({
-      name: 'technologiesName',
-      title: 'TechnologiesName',
+      name: 'summaries',
+      title: 'Summaries',
       type: 'array',
       of: [{ type: 'string' }]
     })

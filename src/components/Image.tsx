@@ -1,10 +1,14 @@
 import React from 'react'
+import { PageInfo } from '../../typings'
+import { urlFor } from '../../sanity'
 
-type Props = {}
+type Props = {
+  pageInfo: PageInfo
+}
 
-function Image({}: Props) {
+function Image({ pageInfo }: Props) {
   return (
-    <img src="https://frazier-se.netlify.app/assets/img/IMG_20180120_131810_874%20(1).jpg" alt="frazier's image"
+    <img src={urlFor(pageInfo?.heroImage).url()} alt="frazier's image"
     className='relative rounded-full h-32 w-32 mx-auto object-cover' />
   )
 }

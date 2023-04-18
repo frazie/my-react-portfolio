@@ -1,16 +1,20 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { PageInfo } from '../../typings'
+import { urlFor } from '../../sanity'
 
-type Props = {}
+type Props = {
+  pageInfo: PageInfo
+}
 
 
-function AboutImage({}: Props) {
+function AboutImage({ pageInfo }: Props) {
   return (
     <motion.img 
-    className='-mb-20 mt-5 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full  object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]' 
+    className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full  object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]' 
 
     initial={{
-        x: -300,
+        x: -200,
         opacity: 0,
     }}
     whileInView={{
@@ -22,7 +26,7 @@ function AboutImage({}: Props) {
     }}
     viewport={{once: true}}
 
-    src="https://frazier-se.netlify.app/assets/img/IMG_20180120_131810_874%20(1).jpg" 
+    src={urlFor(pageInfo?.profilePic).url()} 
     alt="about frazier image" />
   )
 }
