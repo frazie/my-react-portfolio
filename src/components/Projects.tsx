@@ -18,14 +18,14 @@ function Projects({ projects }: Props) {
                 <div 
                 className='w-screen h-screen flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-10 md:p-44'>
                     <motion.img 
-                    className='h-52'
+                    className='h-44'
                     initial={{ y:-300, opacity: 0}}
                     whileInView={{ opacity:1, y:0 }}
                     transition={{ duration: 1.2 }}
                     viewport={{ once: true }}
                     src={urlFor(project?.projectImage).url()} alt="" />
 
-                    <div className='space-y-5 px-0 md:px-10 max-w-6xl'>
+                    <div className='space-y-3 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-3xl font-semibold text-center' >
                             <span className='underline decoration-yellow-400/50'> Case study {i+1} of {projects.length}:</span>  {project?.title}
                         </h4>
@@ -40,8 +40,8 @@ function Projects({ projects }: Props) {
                         </div>
 
                         <div className='flex items-center justify-between'>
-                            <p className='text-2xl text-center px-10'><a href={project.linkToBuild} target='_blank'>Link to Build</a></p>
-                            <p className='text-2xl text-center px-10'><a href={project.linkToBuildCode} target='_blank'>Link to Code</a></p>
+                            <p className='text-lg text-center px-5'><a href={project.linkToBuild} target='_blank'>Link to Build</a></p>
+                            <p className='text-lg text-center px-5'><a href={project.linkToBuildCode} target='_blank'>Link to Code</a></p>
                         </div>
 
                         <p className='text-lg text-center md:text-left'>

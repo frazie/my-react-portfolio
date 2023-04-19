@@ -27,7 +27,7 @@ function Header({ socials }: Props) {
         }}
         className='flex flex-row items-center'>
             {/* social icons */}
-            {socials.map((social) => (
+            {socials?.map((social) => (
                 <SocialIcon
                 key={social._id} 
                 url={social.url}
@@ -65,7 +65,7 @@ function Header({ socials }: Props) {
             />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-400 ' >
                 Get in touch with me.
-                </p>
+            </p>
         </motion.div>
         </Link>
 
