@@ -30,7 +30,8 @@ function ExperienceCard({ experience }: Props) {
           ))}
         </div>
         <p className='uppercase py-4 text-gray-400'>{new Date(experience?.dateStarted).toDateString()} - {experience.isCurrentlyWorkingHere ? 'Present' : new Date(experience?.dateEnded).toDateString()}</p>
-        <ul className='list-disc space-y-2 ml-5 text-lg'>
+        <ul className='list-disc space-y-2 ml-5 text-lg pr-2 h-80 '>
+        {/* overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 */}
           {
             experience.summaries.map((summary, i) => (
           <li key={i}>{summary}</li>
