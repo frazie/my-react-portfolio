@@ -16,6 +16,7 @@ function Projects({ projects }: Props) {
         <div className='relativ w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#f7ab0a]/80'>
             {projects?.map((project, i) => (
                 <div 
+                key={project._id}
                 className='w-screen h-screen flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-10 md:p-44'>
                     <motion.img 
                     className='h-44'
@@ -34,14 +35,14 @@ function Projects({ projects }: Props) {
                                     <img 
                                     className='h-10 w-10 rounded-full'
                                     key={technology._id} 
-                                    src={urlFor(technology.image).url()} alt={technology.nameOfSkill} />
+                                    src={urlFor(technology?.image).url()} alt={technology?.nameOfSkill} />
                                 ))
                             }
                         </div>
 
                         <div className='flex items-center justify-between'>
-                            <p className='text-lg text-center px-5'><a href={project.linkToBuild} target='_blank'>Link to Build</a></p>
-                            <p className='text-lg text-center px-5'><a href={project.linkToBuildCode} target='_blank'>Link to Code</a></p>
+                            <p className='text-lg text-center px-5'><a href={project?.linkToBuild} target='_blank'>Link to Build</a></p>
+                            <p className='text-lg text-center px-5'><a href={project?.linkToBuildCode} target='_blank'>Link to Code</a></p>
                         </div>
 
                         <p className='text-lg text-center md:text-left'>

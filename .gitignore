@@ -9,6 +9,7 @@ next_portfolio\node_modules
 next_portfolio\my-portfolio-details\node_modules
 .env
 
+
 # testing
 /coverage
 
@@ -38,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+my-portfolio-details
+
+.vercel

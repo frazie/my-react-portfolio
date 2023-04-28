@@ -35,12 +35,9 @@ function Header({ socials }: Props) {
                 bgColor='transparent'
                  />
             ))}
-            
-            
-
         </motion.div>
 
-        <Link href='#contact'>
+        
         <motion.div 
         initial={{
             x: -500,
@@ -63,11 +60,14 @@ function Header({ socials }: Props) {
             fgColor='grey' 
             bgColor='transparent'  
             />
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400 ' >
+            <Link href='#contact'>
+                <p className='uppercase hidden md:inline-flex text-sm text-gray-400 ' >
                 Get in touch with me.
-            </p>
+                </p>
+            </Link>
+            
         </motion.div>
-        </Link>
+        
 
         
     </header>

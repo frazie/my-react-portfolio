@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Experience } from '../../typings'
+
 import { urlFor } from '../../sanity'
+import { Experience } from '../../typings'
 
 type Props = {
   experience: Experience
@@ -9,7 +10,8 @@ type Props = {
 
 function ExperienceCard({ experience }: Props) {
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[800px] 2xl:w-[900px] snap-center p-8 bg-[#292929] hover:opacity-100 opacity-10 cursor-pointer transition-opacity duration-200 overflow-hidden' >
+    <article
+    className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[800px] 2xl:w-[900px] snap-center p-8 bg-[#292929] hover:opacity-100 opacity-10 cursor-pointer transition-opacity duration-200 overflow-hidden' >
       <motion.img 
       initial={{
         y: -100,
@@ -25,17 +27,14 @@ function ExperienceCard({ experience }: Props) {
         <h4 className='text-4xl font-light '>{experience?.jobTitle}</h4>
         <p className='font-bold text-2xl mt-1'>{experience?.company}</p>
         <div className='flex space-x-2 my-2'>
-          {experience.technologies.map((technology) => (
-            <img key={technology._id} className='h-10 w-10 rounded-full' src={urlFor(technology.image).url()} alt='' />
+          {experience?.technologies.map((technology) => (
+            <img key={technology._id} className='h-10 w-10 rounded-full' src={urlFor(technology?.image).url()} alt='' />
           ))}
         </div>
         <p className='uppercase py-4 text-gray-400'>{new Date(experience?.dateStarted).toDateString()} - {experience.isCurrentlyWorkingHere ? 'Present' : new Date(experience?.dateEnded).toDateString()}</p>
         <ul className='list-disc space-y-2 ml-5 text-lg pr-2 '>
-        {/* overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 */}
-          {
-            experience.summaries.map((summary, i) => (
-          <li key={i}>{summary}</li>
-              
+          { experience?.summaries.map(( summary : any ) => (
+          <li key={summary}>{summary}</li>
             ))
           }
         </ul>
