@@ -32,7 +32,12 @@ const Home = ({ pageInfo, experiences, skills, projects, socials } : Props) => {
   return (
     <div className='bg-[rgb(54,54,54)] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80'>
     <Head>
+      <meta charSet="UTF-8" />
+      <meta name="keywords" content="remote software engineer, fullstack, full-stack, Frazier Odhiambo, nairobi, kenya, remote" />
+      <meta name="author" content="Frazier Odhiambo" />
       <title> Frazier&apos;s Portfolio</title>
+      <meta name="description" content="Frazier Odhiambo is a fullstack software engineer and create this site to display not only his amazing project and experience, but to also make it easier for potential companies and clients to reach him."/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </Head>
 
     <Header socials={socials} />
