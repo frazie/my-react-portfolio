@@ -12,13 +12,15 @@ type Props = {
 const Hero = ( { pageInfo }: Props) => {
     const [text, count] = useTypewriter({
         words: [
-            `Hi, the name is ${pageInfo?.name}`,
+            `Hi, the name is ${pageInfo?.name[0]}`,
             'Guy-who-loves-motorcycles.tsx',
-            '<ButLovesCodeMore ㋡😎 />'
+            '<ButLovesCodeMore 😎 />',
+            "occassionally tries out cybersecurity stuff",
+
         ],
         loop: true,
         delaySpeed: 2000,
-        typeSpeed: 150,
+        typeSpeed: 100,
     })
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
@@ -30,7 +32,7 @@ const Hero = ( { pageInfo }: Props) => {
                 <span className='mr-3'>{text}</span>
                 <Cursor cursorColor='orange' />
             </h1>
-            <div className='pt-5'>
+            <div className='pt-5 space-x-4'>
                 <Link href='#about'>
                     <button className='heroButton'>About</button>
                 </Link>

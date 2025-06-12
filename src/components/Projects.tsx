@@ -24,7 +24,7 @@ function Projects({ projects }: Props) {
                     whileInView={{ opacity:1, y:0 }}
                     transition={{ duration: 1.2 }}
                     viewport={{ once: true }}
-                    src={urlFor(project?.projectImage).url()} alt="" />
+                    src={urlFor(project?.projectImage)?.url()} alt="" />
 
                     <div className='space-y-3 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-3xl font-semibold text-center' >

@@ -23,7 +23,7 @@ function ContactMe({ pageInfo }: Props) {
     handleSubmit,
    } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:abongoodhiambo@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
+    window.location.href = `mailto:abongoodhiambo@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email}) Reaching out through Portfolio Contact Form`
   }
 
   return (
@@ -32,7 +32,7 @@ function ContactMe({ pageInfo }: Props) {
             contact me
         </h3>
         <div className='flex flex-col space-y-5'>
-            <h4 className='text-4xl text-center font-semibold'>I have got just what you need. {' '}
+            <h4 className='text-4xl text-center font-semibold'>I have got the technical experience just what you need. {' '} <br />
                 <span className='underline decoration-[#f7ab0a]'> Let's Talk</span>
             </h4>
             <div className='space-y-6'>

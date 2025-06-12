@@ -1,9 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-import AboutImage from './AboutImage'
-import AboutText from './AboutText'
+
 import { PageInfo } from '../../typings'
+import AboutImage from './Aboutimage'
+import AboutText from './Abouttext'
 
 
 type Props = {
